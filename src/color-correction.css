@@ -1,6 +1,6 @@
 /* Monochrome art direction: black + grayscale first, sea blue only as motion/edge accent. */
 :root{--ink:#f1f1f1;--paper:#050505;--lime:#eeeeee;--orange:#aaaaaa;--cream:#111111;--line:#383838;--night:#050505;--panel:#111111;--cyan:#218bb8;--electric:#0d587e;--muted:#a4a4a4;--hair:#353535}
-body{background:#050505;color:#f1f1f1}.brand-mark img{filter:grayscale(1) brightness(1.65)}.progress-bar{background:var(--cyan)}
+body{background:#050505;color:#f1f1f1}.progress-bar{background:var(--cyan)}
 .hero{background:radial-gradient(circle at 72% 43%,#2a2a2a 0,#111111 30%,#050505 74%)}.hero-grid{background-image:linear-gradient(#218bb822 1px,transparent 1px),linear-gradient(90deg,#218bb822 1px,transparent 1px)}.hero-grid span{background:var(--cyan);box-shadow:0 0 18px #218bb899}.pulse-dot{background:var(--cyan);box-shadow:0 0 0 5px #218bb833}
 .button-dark{background:#f1f1f1;color:#050505;box-shadow:0 0 0 #218bb800}.button-dark:hover{box-shadow:0 15px 35px #218bb855}.button-light{background:#f1f1f1;color:#050505}.button-outline-light{border-color:var(--cyan)}.brand-dot{color:var(--cyan)}
 .orbit-scene{filter:drop-shadow(0 0 40px #218bb855)}.orbit-fallback{border-color:#218bb899;background:radial-gradient(circle,#dddddd33,#218bb822 45%,transparent 70%)}.orbit-fallback span{color:#d9d9d9}.scene-tag{background:#070707ee;color:#d9d9d9;border-color:#218bb877;box-shadow:10px 10px 0 #000}.scene-tag small{color:#9a9a9a}.scene-cross{color:var(--cyan)}
