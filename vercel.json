@@ -1,7 +1,42 @@
 {
+  "buildCommand": "npm run build",
+  "trailingSlash": false,
   "routes": [
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/servicios", "dest": "/servicios/index.html" },
+    { "src": "/servicios/pauta-publicitaria", "dest": "/servicios/pauta-publicitaria/index.html" },
+    { "src": "/servicios/contenido-y-ugc", "dest": "/servicios/contenido-y-ugc/index.html" },
+    { "src": "/servicios/branding", "dest": "/servicios/branding/index.html" },
+    { "src": "/servicios/asesoria-crecimiento", "dest": "/servicios/asesoria-crecimiento/index.html" },
+    { "src": "/planes", "dest": "/planes/index.html" },
+    { "src": "/nosotros", "dest": "/nosotros/index.html" },
+    { "src": "/faqs", "dest": "/faqs/index.html" },
+    { "src": "/blog", "dest": "/blog/index.html" },
+    { "src": "/blog/cuanto-invertir-pauta-meta-colombia", "dest": "/blog/cuanto-invertir-pauta-meta-colombia/index.html" },
+    { "src": "/blog/que-es-ugc-y-por-que-vende", "dest": "/blog/que-es-ugc-y-por-que-vende/index.html" },
+    { "src": "/blog/calendario-de-contenido-para-negocios", "dest": "/blog/calendario-de-contenido-para-negocios/index.html" },
+    { "src": "/contacto", "dest": "/contacto/index.html" },
+    { "src": "/formulario", "dest": "/formulario/index.html" },
+    { "src": "/solicitud-recibida", "dest": "/solicitud-recibida/index.html" },
+    { "src": "/pago/exito", "dest": "/pago/exito/index.html" },
+    { "src": "/pago/pendiente", "dest": "/pago/pendiente/index.html" },
+    { "src": "/pago/error", "dest": "/pago/error/index.html" },
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "dest": "/404.html" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(.*)\\.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(.*)\\.css",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
   ]
 }
-

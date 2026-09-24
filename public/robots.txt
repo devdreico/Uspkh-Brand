@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /pago/
+Disallow: /solicitud-recibida
+
+Sitemap: https://uspkh.presentto.online/sitemap.xml
